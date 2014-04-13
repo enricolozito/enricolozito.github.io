@@ -1,0 +1,76 @@
+html {
+    height: 100%;
+}
+
+body { 
+    background: #ffffff; 
+    font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;
+    font-size:100%;
+    line-height:1.5;
+    -webkit-text-size-adjust:none;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    height: 4%;
+    width: 100%;
+    background: #ffffff;
+}
+
+header li {
+    position: relative;
+    float: left;
+    margin-left: 15%;  
+    cursor: pointer;
+}
+
+header li:first-child {
+    margin-left: 5%;
+}
+
+li { 
+    font-size:1.25em; 
+    color:#000000; 
+    font-weight:normal; 
+}
+
+a { 
+    color: #000000;
+    text-decoration:none; 
+}
+
+section#target {
+    width: 100%;
+}
+
+figure {
+    float: left;
+    margin: 0 3px;
+}
+
+figure p {
+    text-align:  center;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#gallery figure {
+    width: 30%;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+#gallery figure a img {
+    width: 100%;
+    border: 5px solid white;
+    opacity: 0.4;
+}
+
+#gallery figure a img:hover {
+    opacity: 1;
+}
