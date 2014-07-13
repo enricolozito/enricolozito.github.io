@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlantProfili</title>
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>	
+    <script src="js/foundation.min.js"></script>	
+    <script src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="theme/supersized.shutter.js"></script>    
+	
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />    
+	<link href='http://fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet' type='text/css'>
+	
+	<script>
+		$(document).ready(function(){
+			$(document).foundation();
+				$.supersized({
+				
+					// Functionality
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	700,		// Speed of transition
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'foto/home/3.jpg', title : '', thumb : 'foto/home/3.jpg', url : ''},
+														{image : 'foto/home/4.jpg', title : '', thumb : 'foto/home/4.jpg', url : ''},
+														{image : 'foto/home/img_0677.jpg', title : '', thumb : 'foto/home/img_0677.jpg', url : ''},
+														{image : 'foto/home/img_0684.jpg', title : '', thumb : 'foto/home/img_0684.jpg', url : ''},
+														{image : 'foto/home/img_0688.jpg', title : '', thumb : 'foto/home/img_0688.jpg', url : ''},
+														{image : 'foto/home/img_0689.jpg', title : '', thumb : 'foto/home/img_0689.jpg', url : ''},
+														{image : 'foto/home/img_0693.jpg', title : '', thumb : 'foto/home/img_0693.jpg', url : ''},
+														{image : 'foto/home/img_0695.jpg', title : '', thumb : 'foto/home/img_0695.jpg', url : ''},
+														{image : 'foto/home/img_0697.jpg', title : '', thumb : 'foto/home/img_0697.jpg', url : ''},
+														{image : 'foto/home/img_0760.jpg', title : '', thumb : 'foto/home/img_0760.jpg', url : ''},
+														{image : 'foto/home/img_4384.jpg', title : '', thumb : 'foto/home/img_4384.jpg', url : ''},  
+														{image : 'foto/home/img_4385.jpg', title : '', thumb : 'foto/home/img_4385.jpg', url : ''},  
+														{image : 'foto/home/img_4395.jpg', title : '', thumb : 'foto/home/img_4395.jpg', url : ''},  
+														{image : 'foto/home/pag163.jpg', title : '', thumb : 'foto/home/pag163.jpg', url : ''}                          
+												]
+					
+				});            
+		});
+	</script>
+</head>
+
+<body>
+
+	<header> 
+		<div class="row">
+			<div class="large-12 columns">
+				<ul id="menu">
+					<li><a href="index.html"><img src="img/plant_profili_logo.jpg" width="150px"/></a></li>
+					<li><a href="legni.html">PROFILATI</a>		
+					<li><a href="legni.html">FINITURE PREGIATE</a>
+						<ul class="submenu">
+							<li><a href="uffici.html">ORO ZECCHINO</a></li>
+							<li><a href="barche.html">INCAUSTO FIORENTINO</a></li>	
+							<li><a href="barche.html">PITTURE IN RILIEVO</a></li>		                            
+						</ul>
+					</li>	
+					<li><a href="legni.html">LEGNI PREGIATI</a></li>  
+					<li><a href="portfolio.html">INTERIOR DESIGN</a>
+						<ul class="submenu">
+							<li><a href="uffici.html">ARREDAMENTO</a></li>
+							<li><a href="barche.html">PAVIMENTI</a></li>								
+						</ul>
+					</li>	 
+					<li><a href="portfolio.html">LAVORAZIONE METALLI</a>
+						<ul class="submenu">
+							<li><a href="uffici.html">ACCIAIO INOX</a></li>
+							<li><a href="barche.html">OTTONE</a></li>	
+							<li><a href="uffici.html">RAME</a></li>
+							<li><a href="barche.html">BRONZO</a></li>	                            
+						</ul>
+					</li>	                
+					<li><a href="portfolio.html">PORTFOLIO</a>
+						<ul class="submenu">
+							<li><a href="uffici.html">PRIVATI</a></li>                            
+							<li><a href="uffici.html">BANCHE</a></li>
+							<li><a href="barche.html">UFFICI</a></li>								
+						</ul>
+					</li>	
+					<li><a href="legni.html">CHI SIAMO</a></li>                
+				</ul>
+			</div>			
+		</div>	
+	</header>
+
+    <section id="homepage_slideshow">
+        <!--Thumbnail Navigation-->
+        <div id="prevthumb"></div>
+        <div id="nextthumb"></div>
+
+        <!--Arrow Navigation-->
+        <a id="prevslide" class="load-item"></a>
+        <a id="nextslide" class="load-item"></a>
+
+        <div id="thumb-tray" class="load-item">
+            <div id="thumb-back"></div>
+            <div id="thumb-forward"></div>
+        </div>
+
+        <!--Time Bar-->
+        <div id="progress-back" class="load-item">
+            <div id="progress-bar"></div>
+        </div>
+
+        <!--Control Bar-->
+        <div id="controls-wrapper" class="load-item">
+            <div id="controls">
+
+                <a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+
+                <!--Slide counter-->
+                <div id="slidecounter">
+                    <span class="slidenumber"></span> / <span class="totalslides"></span>
+                </div>
+
+                <!--Slide captions displayed here-->
+                <div id="slidecaption"></div>
+
+                <!--Thumb Tray button-->
+                <a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+
+                <!--Navigation-->
+                <ul id="slide-list"></ul>
+                <div id="info">
+                    <p>TEL 06123456 EMAIL plantprofili@gmail.com</p>
+                </div>   
+                <div id="social">
+                    <a href="http://www.facebook.com"><img src="img/facebook-logo.png" width="30%"/></a>
+                </div>
+
+            </div>
+        </div>                  
+    </section>        
+	
+
+
+</body>
+
+</html>
